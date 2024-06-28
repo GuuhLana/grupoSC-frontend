@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <h2>Listar Clientes</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>CNPJ</th>
+                    <th>Razão Social</th>
+                    <th>Usuário</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes">
+                    <td>{{ cliente.cnpj }}</td>
+                    <td>{{ cliente.razaoSocial }}</td>
+                    <td>{{ cliente.usuario }}</td>
+                    <td>{{ cliente.status }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

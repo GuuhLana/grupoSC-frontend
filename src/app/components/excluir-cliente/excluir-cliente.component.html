@@ -1,0 +1,14 @@
+<body>
+    <div class="container">
+        <h2>Excluir Cliente</h2>
+        <form class="form">
+            <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" [(ngModel)]="cnpj" name="cnpj" required>
+            </div>
+            <div>
+                <button class="btn" type="button" (click)="excluirCliente()">Excluir Cliente</button>
+            </div>
+        </form>
+    </div>
+</body>

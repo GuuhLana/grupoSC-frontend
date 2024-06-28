@@ -1,0 +1,21 @@
+<body>
+    <div class="container">
+        <h2>Buscar Cliente por CNPJ</h2>
+        <form class="form">
+            <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" [(ngModel)]="cnpj" name="cnpj" required>
+            </div>
+            <div>
+                <button class="btn" type="button" (click)="buscarCliente()">Buscar Cliente</button>
+            </div>
+            <div *ngIf="cliente">
+                <h3>Detalhes do Cliente</h3>
+                <p><strong>CNPJ:</strong> {{ cliente.cnpj }}</p>
+                <p><strong>Razão Social:</strong> {{ cliente.razaoSocial }}</p>
+                <p><strong>Usuário:</strong> {{ cliente.usuario }}</p>
+                <p><strong>Status:</strong> {{ cliente.status }}</p>
+            </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,33 @@
+<body>
+    <div class="container">
+        <h2>Criar Cliente</h2>
+        <form class="form">
+            <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" [(ngModel)]="cliente.cnpj" name="cnpj" required>
+            </div>
+            <div>
+                <label for="razaoSocial">Razão Social:</label>
+                <input type="text" id="razaoSocial" [(ngModel)]="cliente.razaoSocial" name="razaoSocial" required>
+            </div>
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" [(ngModel)]="cliente.usuario" name="usuario" required>
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" [(ngModel)]="cliente.senha" name="senha" required>
+            </div>
+            <div>
+                <label for="status">Status:</label>
+                <select id="status" [(ngModel)]="cliente.status" name="status" required>
+                    <option value="ativo">ATIVO</option>
+                    <option value="inativo">INATIVO</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn" type="button" (click)="criarCliente()">Criar Cliente</button>
+            </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,18 @@
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form class="form">
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" [(ngModel)]="usuario" name="usuario" required>
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" [(ngModel)]="senha" name="senha" required>
+            </div>
+            <div>
+                <button class="btn" type="button" (click)="login()">Login</button>
+            </div>
+        </form>
+    </div>
+</body>

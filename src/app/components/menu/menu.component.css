@@ -1,0 +1,36 @@
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    /* Distribui os botões com espaço igual ao redor */
+    margin-top: 20px;
+}
+
+.menu-buttons .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Espaço entre os botões */
+}
+
+.menu-buttons .btn:last-child {
+    margin-right: 0;
+    /* Remove o espaço à direita do último botão */
+}
+
+.menu-buttons .btn:hover {
+    background-color: #0056b3;
+}
